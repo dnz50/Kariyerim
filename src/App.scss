@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root{
+  height: 100vh;
+}
+
+.job-count {
+  margin-left: 50px;
+  margin-top: 200px;
+}
+
+.list{
+  width: 100vw;
+  height:auto;
+  margin-top: 150px;
+
+  .find-text {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.list-section {
+  width: 98vw;
+  height: auto;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,
+      minmax(400px, 1fr));
+  font-family: 'Roboto', sans-serif;
+
+  
+
+  .job-card {
+    box-shadow: 0px 5px 5px 5px darkorchid;
+    margin: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px;
+
+    .head {
+      padding: 10px;
+      background: linear-gradient(to right, darkorchid, rgb(241, 61, 235));
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      .letter {
+        font-size: 40px;
+        color: white;
+        font-weight: bolder;
+        padding: 0px 15px;
+        border-radius: 5px;
+        border: 2px solid white;
+      }
+
+      .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 10px;
+        width: 80%;
+      }
+    }
+
+    .card-body {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+
+      .field {
+        display: flex;
+        align-items: center;
+        width: 50%;
+
+        .icon {
+          width: 50px;
+          height: 50px;
+          font-size: 30px;
+          padding: 5px;
+          margin: 5px;
+          text-align: center;
+          color: darkorchid;
+          border: 2px solid darkorchid;
+          border-radius: 5px;
+        }
+
+        .Devam {
+          border: 2px solid yellowgreen;
+          border-radius: 5px;
+          padding: 5px;
+          margin: 5px;
+        }
+
+        .Reddedildi {
+          border: 2px solid red;
+          border-radius: 5px;
+          padding: 5px;
+          margin: 5px;
+        }
+
+        .Mülakat {
+          border: 3px solid yellow;
+          border-radius: 5px;
+          padding: 5px;
+          margin: 5px;
+        }
+        .card-btn {
+          color: white;
+          background: linear-gradient(to right, darkorchid,orchid);
+          border: 2px solid darkorchid;
+          padding: 5px 10px;
+          border-radius: 10px;
+          transition: all 0.5s;
+        }
+    
+        .card-btn:hover {
+          color: darkorchid;
+          background: white;
+          transition: all 0.5s;
+        }
+
+      }
+    }
+  }
+}
+
+.header {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: linear-gradient(to right, darkorchid, white);
+  position: fixed;
+
+  h2 {
+    color: white;
+    padding-left: 20px;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .button {
+    text-decoration: none;
+    margin-right: 50px;
+    display: flex;
+
+    .btn {
+      color: white;
+      background-color: orchid;
+      border: 2px solid white;
+      padding: 5px 20px;
+      border-radius: 10px;
+      margin: 10px;
+      transition: all 0.5s;
+    }
+
+    .btn:hover {
+      color: darkorchid;
+      background-color: white;
+      border: 2px solid darkorchid;
+      transition: all 0.5s;
+    }
+
+    .active {
+      color: darkorchid;
+      background-color: white;
+      border: 2px solid darkorchid;
+      transition: all 0.5s;
+    }
+  }
+}
+.clear-btn{
+  margin:10px 30px;
+  color: white;
+  border: 2px solid darkorchid;
+  background: linear-gradient(to right, darkorchid,rgb(253, 32, 32));
+  transition: all 0.5s;
+}
+.clear-btn:hover{
+  color: rgb(253, 32, 32);
+  background: white;
+  border: 2px solid rgb(253, 32, 32);
+  transition: all 0.5s;
+}
+
+.addjob {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  h2 {
+    font-size: 40px;
+    padding: 20px;
+  }
+
+  .form {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    box-shadow: 5px 5px 10px 10px darkorchid;
+    border-radius: 10px;
+
+    div {
+      padding: 10px;
+
+      label {
+        margin: 5px;
+        padding: 5px;
+        width: 100%;
+      }
+
+      input {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+      }
+
+      select {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+
+        option {
+          background-color: darkorchid;
+          font-size: 16px;
+          color: white;
+          height: 30px;
+        }
+
+        option::before {
+          background-color: white;
+          color: darkorchid;
+        }
+      }
+    }
+
+    .btn-area {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .add-btn {
+        width: 150px;
+        height: 40px;
+        color: white;
+        background-color: darkorchid;
+        border: 2px solid white;
+        padding: 5px 20px;
+        border-radius: 20px;
+        margin: 10px;
+        text-align: center;
+        transition: all 0.5s;
+      }
+
+      .add-btn:hover {
+        color: darkorchid;
+        background-color: white;
+        border: 2px solid darkorchid;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+.filter-section {
+  width: 100vw;
+  height: 20vh;
+  padding: 10px;
+  margin-bottom: 90px;
+  margin-top: 50px;
+
+  h2 {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .filter-form {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 98%;
+    height: auto;
+    box-shadow: 5px 5px 10px 10px darkorchid;
+    border-radius: 10px;
+    padding: 20px;
+
+    .filter-label {
+      margin: 0px 15px;
+      padding: 5px;
+      width: 100%;
+    }
+
+    .filter-input {
+      margin: 0px 15px;
+      padding: 5px;
+      border-radius: 5px;
+      width: 100%;
+      height: 40px;
+      font-size: 16px;
+    }
+
+    .filter-select {
+      margin: 0px 15px;
+      padding: 5px;
+      border-radius: 5px;
+      width: 100%;
+      height: 40px;
+      font-size: 16px;
+
+      option {
+        background-color: darkorchid;
+        font-size: 16px;
+        color: white;
+        height: 30px;
+      }
+    }
+
+  }
+}
+@media (max-width:768px) {
+  body{
+    font-size: small !important;
+  }
+  h2{
+    font-size: 30px !important;
+  }
+  .button{
+    margin-right: 10px !important;
+  }
+  .btn{
+    font-size: 11px;
+  }
+  .letter{
+    font-size: 30px !important;
+  }
+  input{
+    height: auto !important;
+  }
+  select{
+    font-size: small !important;
+    height: auto !important;
+    width: 100px !important;
+  }
+  option{
+    font-size: small !important;
+    height: auto;
+  }
+}
